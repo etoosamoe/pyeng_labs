@@ -14,8 +14,10 @@ print(com2splitted)
 
 vlans1=com1splitted[-1].split(',')
 vlans2=com2splitted[-1].split(',')
+vlan=set(vlans1+vlans2)
+vlan=sorted(vlan)
 
 vlans1.extend(vlans2)
-vlan=sorted(vlans1)
+#vlan=sorted(vlans1)
 print(vlan)
 
